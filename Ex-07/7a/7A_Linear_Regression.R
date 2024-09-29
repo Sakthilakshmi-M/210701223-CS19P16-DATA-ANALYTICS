@@ -1,6 +1,6 @@
 # Load the dataset
 data(mtcars)
-# Convert 'am' to a factor (categorical variable)
+w# Convert 'am' to a factor (categorical variable)
 mtcars$am <- factor(mtcars$am, levels = c(0, 1), labels = c("Automatic", "Manual"))
 # Fit a logistic regression model
 logistic_model <- glm(am ~ mpg, data = mtcars, family = binomial)
